@@ -1,0 +1,78 @@
+<body bgcolor=BCA866>
+<p style="text-align: center">
+<img src="hadoop3.png" height="450px" width="1300"/>
+</p>
+<B><U><p style="font-size: 80px">Hadoop Menu !!!!</p></U></B>
+<br><br>
+<br>
+
+<ul style="list-style-type: square">
+
+<li><U><h1>Start Namenode</h1></U></li>
+<br>
+<form action="http://192.168.43.167/cgi-bin/startnamenode.py">
+<input type="submit" value="Run"/>
+</form>
+
+<li><U><h1>Start Datanode</h1></U></li>
+<br>
+<form action="http://192.168.43.159/cgi-bin/datanodestart.py">
+<input type="submit" value="Run"/>
+</form>
+
+<li><U><h1>Stop Namenode</h1></U></li>
+<br>
+<form action="http://192.168.43.167/cgi-bin/stopnamenode.py">
+<input type="submit" value="Run" />
+</form>
+
+<li><U><h1>Stop Datanode</h1></U></li>
+<br>
+<form action="http://192.168.43.159/cgi-bin/datanodestop.py">
+<input type="submit" value="Run"/>
+</form>
+
+<li><U><h1>Configure Hadoop namenode</h1></U></li>
+<h3><I>*note after this you need to format namenode(hadoop namenode -format) and start namenode service(hadoop-daemon.sh start namenode)</I></h3>
+<br>
+<form action="http://192.168.43.55/cgi-bin/hadoopconf.py">
+<h2>Enter instance ip</h2>
+<input name="ip" type="text" />
+<h2>Enter user name</h2>
+<input name="user" type="text" />
+<h2>Enter user password</h2>
+<input name="passwd" type="text" />
+<br>
+<h2>Enter port number</h2>
+<input name="port" type="text" />
+<br>
+<input type="submit" value="Run"/>
+</form>
+
+<li><U><h1>Configure Hadoop datanode</h1></U></li>
+<h3><I>*note after this you need to start datanode service(hadoop-daemon.sh start datanode)</I></h3>
+<br>
+<form action="http://192.168.43.55/cgi-bin/hadoopdatanode.py">
+<h2>Enter instance ip</h2>
+<input name="ip" type="text" />
+<h2>Enter user name</h2>
+<input name="user" type="text" />
+<h2>Enter user password</h2>
+<input name="passwd" type="text" />
+<br>
+<h2>Enter namenode ip</h2>
+<input name="namenodeip" type="text" />
+<br>
+<h2>Enter port number</h2>
+<input name="port" type="text" />
+<br>
+<input type="submit" value="Run"/>
+</form>
+
+</ul>
+<br><br>
+<form action="http://192.168.43.55/index.html">
+<h2>Go back to main page</h2><br>
+<input type="submit" value="<----"/>
+</form>
+</body>

@@ -1,0 +1,26 @@
+- hosts: all
+  tasks: 
+   - command: "rm -rf /etc/hadoop/hdfs-site.xml"
+
+   - command: "rm -rf /etc/hadoop/core-site.xml"
+
+   - file:
+           path: "/etc/hadoop/hdfs-site.xml"
+           state: touch
+
+   - file: 
+          path: "/etc/hadoop/core-site.xml"
+          state: touch
+
+   - file:
+           path: "/nn"
+           state: touch
+
+   - copy:
+           src: "hdfs-site.xml"
+           dest: "/etc/hadoop/hdfs-site.xml"
+
+   - copy:
+           src: "core-site.xml"
+           dest: "/etc/hadoop/core-site.xml"
+

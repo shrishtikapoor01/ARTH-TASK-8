@@ -1,0 +1,46 @@
+<body bgcolor=CA97F3>
+<p style="text-align: center">
+<img src="lvm.png" width="1300px" height="450px" />
+</p>
+<B><U><p style="font-size: 80px">LVM Menu !!!!</p></U></B>
+<br><br>
+
+<ul style="list-style-type: square">
+<li><U><h1>Create an LVM</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/lvm.py">
+<h2>Give name of hard disk(like /dev/sda)</h2>
+<input name="hd" type="text" />
+<h2>Give name of pv</h2>
+<input name="pv" type="text" />
+<h2>Give name of vg</h2>
+<input name="vg" type="text" />
+<h2>Give name of lv</h2>
+<input name="lv" type="text" />
+<h2>Give size of lv(example 1G)</h2>
+<input name="size" type="text" />
+<input type="submit" value="Run"/>
+</form>
+<br>
+<br>
+
+<li><U><h1>Increase or decrease size of lvm</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/lvm1.py">
+<h2>Enter 1 for increasing the size</h2>
+<h2>Enter 2 for reducing the size</h2>
+<input name="uc" type="text" />
+<h2>Give name of vg</h2>
+<input name="vg" type="text" />
+<h2>Give name of lv</h2>
+<input name="lv" type="text" />
+<h2>Give size of lv(example 1G)</h2>
+<input name="size" type="text" />
+<input type="submit" value="Run"/>
+</form>
+</ul>
+
+<br><br>
+<form action="http://192.168.43.55/index.html">
+<h2>Go back to main page</h2><br>
+<input type="submit" value="<----"/>
+</form>
+</body

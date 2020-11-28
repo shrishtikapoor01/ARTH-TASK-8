@@ -1,0 +1,65 @@
+<body bgcolor=FFA233>
+<p style="text-align: center">
+<img src="aws.png" width="1300px" height="450px" />
+</p>
+<U><B><p style="font-size: 80px">AWS Menu !!!!</p></B></U>
+<br><br>
+
+<ul style="list-style-type: square">
+
+<li><U><h1>Launch t2.micro instance</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/aws.py">
+<input type="submit" value="Run"/>
+</form>
+<br>
+
+<li><U><h1>Delete t2.micro instance</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/aws1.py">
+<h2>Enter instance id</h2>
+<input name="id" type="text" />
+<input type="submit" value="Run"/>
+</form>
+<br>
+
+<li><U><h1>Create EBS Volume</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/ebs.py">
+<h2>Enter Size of EBS Volume</h2>
+<input name="size" type="text" />
+<input type="submit" value="Run"/>
+</form>
+<br>
+
+<li><U><h1>Delete EBS Volume</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/ebs1.py">
+<h2>Enter instance id</h2>
+<input name="id" type="text" />
+<input type="submit" value="Run"/>
+</form>
+<br>
+
+<li><U><h1>Attach EBS Volume</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/ebs2.py">
+<h2>Enter instance id</h2>
+<input name="id" type="text" />
+<h2>Enter volume id</h2>
+<input name="vid" type="text" />
+<input type="submit" value="Run"/>
+</form>
+<br>
+
+<li><U><h1>Create S3 Bucket</h1></U></li>
+<form action="http://192.168.43.55/cgi-bin/s3.py">
+<h2>Enter unique name for S3 bucket</h2>
+<input name="name" type="text" />
+<input type="submit" value="Run"/>
+</form>
+<br>
+
+</ul>
+
+<br><br>
+<form action="http://192.168.43.55/index.html">
+<h2>Go back to main page</h2><br>
+<input type="submit" value="<----"/>
+</form>
+</body>
